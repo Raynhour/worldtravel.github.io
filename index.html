@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>World Travel Nation</title>
+      <!-- build:css -->
+      <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/libs.css">
+      <!-- endbuild -->
+      <link rel="stylesheet" href="libs/lity/dist/lity.min.css">
+      <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.carousel.min.css">
+      <!-- build:css2 -->
+      <link rel="stylesheet" href="css/main.css">
+      <!-- endbuild -->
+      <!-- <script src="https://unpkg.com/vue/dist/vue.js"></script> -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+      <header class="header header_shadow">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-3 col-xs-12">
+                  <div class="header__wrap">
+                     <a href="index.html" class="header__logo">
+                     <img src="img/logo.png" alt="">
+                     </a>
+                  </div>
+                  <div class="header__wrap">
+                     <h1 class="header__title">world<br>travel<br>nation</h1>
+                  </div>
+               </div>
+               <div class="col-md-3 col-xs-12   ">
+                  <div class="header__wrap">
+                     <form form="" action="" class="header__form">
+                        <input type="text" class="header__search">
+                     </form>
+                  </div>
+               </div>
+               <div class="col-md-3 col-md-offset-3 col-xs-12 col-xs-offset-0">
+                  <div class="header__wrap header__wrap_right">
+                     <span class="header__link">
+                        <img src="img/notifications.png" alt="">
+                        <div class="header__link-inner">
+                           <div class="header__link-text">3</div>
+                        </div>
+                     </span>
+                     <span class="header__link" id="message">
+                        <img src="img/headmail.png" alt="">
+                        <div class="header__link-inner">
+                           <div class="header__link-text">3</div>
+                        </div>
+                     </span>
+                     <span class="header__link">
+                        <div class="header__link-center">
+                           <div class="header__avatar" style="background-image: url(img/miniavatars.png);"></div>
+                           <span class="header__triangle"></span>
+                        </div>
+                     </span>
+                     <div class="header__box">
+                        <div class="header__box-top">
+                           <div class="inbox__left">
+                              <div class="inbox__center inbox__center_header">
+                                 <div class="inbox__left-inner">  messages</div>
+                              </div>
+                           </div>
+                           <div class="inbox__right">
+                              <div class="inbox__center inbox__center_header">
+                                 <div class="header__box-menu header__box-menu_line">Write</div>
+                                 <div class="header__box-menu">Show all</div>
+                                 <div class="header__triangle-right header__triangle-right_box">   </div>
+                              </div>
+                           </div>
+                           <div class="clearfix">  </div>
+                        </div>
+                        <div class="inbox__message">
+                           <div class="section__avatars section__avatars_mini" style="background-image: url(img/miniavatars.png);"></div>
+                           <div class="inbox__description">
+                              <div class="section__avatar-name">John Adams  </div>
+                              <div class="section__date">11 days ago</div>
+                              <p class="section__text section__text_inbox"> lorem</p>
+                           </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <a href="messenger.html" class="header__box-link"><span class="header__box-link-inner">all messages</span><span class="header__triangle-right"> </span></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="wrapper">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-3">
+                  <aside class="menu">
+                     <nav class="menu-nav">
+                        <ul class="menu-nav__list">
+                           <li class="menu-nav__item"><a href="" class="menu-nav__link">activity</a></li>
+                           <li class="menu-nav__item"><a href="profile.html" class="menu-nav__link menu-nav__link_profile">profile</a></li>
+                           <li class="menu-nav__item"><a href="" class="menu-nav__link menu-nav__link_companies">my companies</a></li>
+                           <li class="menu-nav__item"><a href="" class="menu-nav__link menu-nav__link_friends">friends</a></li>
+                           <li class="menu-nav__item"><a href="" class="menu-nav__link menu-nav__link_notifications">notifications</a></li>
+                           <li class="menu-nav__item"><a href="" class="menu-nav__link menu-nav__link_groups">groups</a></li>
+                           <li class="menu-nav__item"><a href="" class="menu-nav__link menu-nav__link_forums">forums</a></li>
+                           <li class="menu-nav__item"><a href="blog.html" class="menu-nav__link menu-nav__link_blog">blog</a></li>
+                           <li class="menu-nav__item"><a href="" class="menu-nav__link menu-nav__link_invites">send invites</a></li>
+                           <li class="menu-nav__item"><a href="messenger.html" class="menu-nav__link menu-nav__link_messages">messages</a></li>
+                        </ul>
+                     </nav>
+                  </aside>
+               </div>
+               <div class="col-md-9">
+                  <!-- COMPANY PROFILE -->
+                  <main class="main">
+                     <section class="section section_company">
+                        <div class="section__banner" style="background:url(img/banner.jpg)"></div>
+                        <div class="section-company">
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <!-- <div class="section__box"> -->
+                                 <h2 class="section__title section__title_pink">company name</h2>
+                                 <!-- </div> -->
+                                 <!--             <div class="section__img">
+                                    </div> -->
+                              </div>
+                              <div class="col-md-4">
+                                 <h3 class="section-company__title">
+                                    profile run by
+                                 </h3>
+                                 <div class="section__avatars" style="background:url(img/avatars.png"></div>
+                                 <div class="section__names">
+                                    john john
+                                    <span class="section__names-description">Director</span>
+                                    <span class="section__names-description">NBC</span>
+                                    <span class="section__names-description">Orlando</span>
+                                 </div>
+                                 <div class="clearfix">  </div>
+                                 <a href=" " class="section__btn"><span class="section__btn-inner">add partner</span></a>
+                                 <a href=" " class="section__btn section__btn_blue"><span class="section__btn-inner">Message</span></a>
+                              </div>
+                              <div class="col-md-4">
+                                 <ul class="section__list section__list_company">
+                                    <li class="section__item section__item_adress">Mailing adress</li>
+                                    <li class="section__item section__item_tel">Telephone office</li>
+                                    <li class="section__item section__item_mob">Mobile</li>
+                                 </ul>
+                                 <div class="section-company__box">
+                                    <div class="section-company__box-left">FAM trip provider</div>
+                                    <div class="section-company__box-right">yes</div>
+                                 </div>
+                              </div>
+                              <div class="col-md-4">
+                                 <ul class="section__list section__list_company">
+                                    <li class="section__item section__item_mail">E-mail</li>
+                                    <li class="section__item section__item_skype">Skype</li>
+                                    <li class="section__item section__item_hours">Operating hours</li>
+                                 </ul>
+                                 <div class="section-company__box">
+                                    <div class="section-company__box-left">FAM trip provider</div>
+                                    <div class="section-company__box-right">yes</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="map">
+                           <img src="img/map.png" class="img-responsive" alt="">
+                        </div>
+                     </section>
+                     <!-- ABOUT COMPANY -->
+                     <section class="section">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="section__box section__box_about">
+                                 <img src="img/aboutlogo.jpg" alt="" class="img-responsive section__logo">
+                                 <ul class="section__list">
+                                    <li class="section__item section__item_adress">Location</li>
+                                    <li class="section__item section__item_hours">Operating Hours</li>
+                                 </ul>
+                              </div>
+                              <div class="section__box_about-2">
+                                 <h2 class="section__title section__title_left">about the company</h2>
+                                 <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui </p>
+                                 <img href="https://www.youtube.com/watch?v=XSGBVzeBUbk" src="img/videojpg.jpg" data-lity alt="" class="section__video-img">
+                                 <a href="#" class="section__video-btn"><span class="section__video-text">media feed</span></a>
+                              </div>
+                              <div class="clearfix">  </div>
+                              <div class="section__more">
+                                 <span class="section__more-circle"></span>
+                                 <span class="section__more-circle"></span>
+                                 <span class="section__more-circle"></span>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                     <!-- OUR TEAM -->
+                     <section class="section section_team">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <h2 class="section__title">our team</h2>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="section__avatars" style="background:url(img/avatars.png"></div>
+                              <div class="section__names">
+                                 john john
+                                 <span class="section__names-description">Director</span>
+                                 <span class="section__names-description">NBC</span>
+                                 <span class="section__names-description">Orlando</span>
+                              </div>
+                              <div class="clearfix"> </div>
+                              <a href=" " class="section__btn"><span class="section__btn-inner">add partner</span></a>
+                              <a href=" " class="section__btn section__btn_blue"><span class="section__btn-inner">Message</span></a>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="section__avatars" style="background:url(img/avatars.png"></div>
+                              <div class="section__names">
+                                 john john
+                                 <span class="section__names-description">Director</span>
+                                 <span class="section__names-description">NBC</span>
+                                 <span class="section__names-description">Orlando</span>
+                              </div>
+                              <div class="clearfix"> </div>
+                              <a href=" " class="section__btn"><span class="section__btn-inner">add partner</span></a>
+                              <a href=" " class="section__btn section__btn_blue"><span class="section__btn-inner">Message</span></a>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="section__avatars" style="background:url(img/avatars.png"></div>
+                              <div class="section__names">
+                                 john john
+                                 <span class="section__names-description">Director</span>
+                                 <span class="section__names-description">NBC</span>
+                                 <span class="section__names-description">Orlando</span>
+                              </div>
+                              <div class="clearfix"> </div>
+                              <a href=" " class="section__btn"><span class="section__btn-inner">add partner</span></a>
+                              <a href=" " class="section__btn section__btn_blue"><span class="section__btn-inner">Message</span></a>
+                           </div>
+                           <div class="col-md-12">
+                              <div class="clearfix">  </div>
+                              <div class="section__more">
+                                 <span class="section__more-circle"></span>
+                                 <span class="section__more-circle"></span>
+                                 <span class="section__more-circle"></span>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                     <!-- OUR PROJECTS -->
+                     <section class="section">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="section_projects">
+                                 <h2 class="section__title">our projects</h2>
+                                 <div class="owl-carousel">
+                                    <div class="item">
+                                       <div class="section__projects-img"></div>
+                                       <p class="section__description section__description_margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                                       <a href=" " class="section__btn"><span class="section__btn-inner">Read More</span></a>
+                                    </div>
+                                    <div class="item">
+                                       <div class="section__projects-img"></div>
+                                       <p class="section__description section__description_margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                                       <a href=" " class="section__btn"><span class="section__btn-inner">Read More</span></a>
+                                    </div>
+                                    <div class="item">
+                                       <div class="section__projects-img"></div>
+                                       <p class="section__description section__description_margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                                       <a href=" " class="section__btn"><span class="section__btn-inner">Read More</span></a>
+                                    </div>
+                                    <div class="item">
+                                       <div class="section__projects-img"></div>
+                                       <p class="section__description section__description_margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                                    </div>
+                                    <div class="item">
+                                       <div class="section__projects-img"></div>
+                                       <p class="section__description section__description_margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                                    </div>
+                                    <div class="item">
+                                       <div class="section__projects-img"></div>
+                                       <p class="section__description section__description_margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="section__more">
+                                 <span class="section__more-circle"></span>
+                                 <span class="section__more-circle"></span>
+                                 <span class="section__more-circle"></span>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                     <!-- OUR SERVICES -->
+                     <section class="section">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <h2 class="section__title">our services</h2>
+                           </div>
+                           <div class="section_services">
+                              <div class="col-md-4">
+                                 <ul class="section__list">
+                                    <li class="section__item section__item_services">service</li>
+                                    <li class="section__item section__item_services">service</li>
+                                    <li class="section__item section__item_services">service</li>
+                                 </ul>
+                              </div>
+                              <div class="col-md-4">
+                                 <ul class="section__list">
+                                    <li class="section__item section__item_services">service</li>
+                                    <li class="section__item section__item_services">service</li>
+                                    <li class="section__item section__item_services">service</li>
+                                 </ul>
+                              </div>
+                              <div class="col-md-4">
+                                 <ul class="section__list">
+                                    <li class="section__item section__item_services">service</li>
+                                    <li class="section__item section__item_services">service</li>
+                                    <li class="section__item section__item_services">service</li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="col-md-12">
+                              <div class="section__more">
+                                 <span class="section__more-circle"></span>
+                                 <span class="section__more-circle"></span>
+                                 <span class="section__more-circle"></span>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                     <!--  KEYWORDS/TAGS -->
+                     <section class="section">
+                        <div class="section_keywords">
+                           <div class="row">
+                              <div class="col-md-12 col-xs-12">
+                                 <h2 class="section__title">keywords / tags</h2>
+                                 <div class="section__wrap">
+                                    <a href="#" class="section__tag"><span class="section__tag-name">Tag</span></a>
+                                    <a href="#" class="section__tag"><span class="section__tag-name">Tag</span></a>
+                                    <a href="#" class="section__tag"><span class="section__tag-name">Tag</span></a>
+                                    <a href="#" class="section__tag"><span class="section__tag-name">Tag</span></a>
+                                    <a href="#" class="section__tag"><span class="section__tag-name">Tag</span></a>
+                                    <a href="#" class="section__tag"><span class="section__tag-name">Tag</span></a>
+                                 </div>
+                                 <div class="section__wrap section__wrap_keywords">
+                                    <a href="#" class="section__tag"><span class="section__tag-name">Tag</span></a>
+                                    <a href="#" class="section__tag"><span class="section__tag-name">Tag</span></a>
+                                    <a href="#" class="section__tag"><span class="section__tag-name">Tag</span></a>
+                                    <a href="#" class="section__tag"><span class="section__tag-name">Tag</span></a>
+                                    <a href="#" class="section__tag"><span class="section__tag-name">Tag</span></a>
+                                    <a href="#" class="section__tag"><span class="section__tag-name">Tag</span></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="section__more">
+                                 <div class="section__more-circle"></div>
+                                 <div class="section__more-circle"></div>
+                                 <div class="section__more-circle"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                     <!--  OUR NETWORKS -->
+                     <section class="section">
+                        <div class="section__networks">
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <h2 class="section__title">our networks</h2>
+                              </div>
+                              <div class="col-md-4">
+                                 <div class="section__picture"><img src="  " alt="" class="section__picture-img"></div>
+                                 <a href=" " class="section__btn section__btn_center"><span class="section__btn-inner section__btn-inner_connect">unconnect</span></a>
+                              </div>
+                              <div class="col-md-4">
+                                 <div class="section__picture"><img src="  " alt="" class="section__picture-img"></div>
+                                 <a href=" " class="section__btn section__btn_center"><span class="section__btn-inner section__btn-inner_connect">unconnect</span></a>
+                              </div>
+                              <div class="col-md-4">
+                                 <div class="section__picture"><img src="  " alt="" class="section__picture-img"></div>
+                                 <a href=" " class="section__btn section__btn_center"><span class="section__btn-inner section__btn-inner_connect">unconnect</span></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="section__more">
+                                 <div class="section__more-circle"></div>
+                                 <div class="section__more-circle"></div>
+                                 <div class="section__more-circle"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                     <!--  OUR PARTNERS -->
+                     <section class="section">
+                        <div class="section__networks">
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <h2 class="section__title">our partners</h2>
+                              </div>
+                              <div class="col-md-4">
+                                 <div class="section__picture"><img src="  " alt="" class="section__picture-img"></div>
+                                 <a href=" " class="section__btn section__btn_center"><span class="section__btn-inner section__btn-inner_connect">unconnect</span></a>
+                              </div>
+                              <div class="col-md-4">
+                                 <div class="section__picture"><img src="  " alt="" class="section__picture-img"></div>
+                                 <a href=" " class="section__btn section__btn_center"><span class="section__btn-inner section__btn-inner_connect">unconnect</span></a>
+                              </div>
+                              <div class="col-md-4">
+                                 <div class="section__picture"><img src="  " alt="" class="section__picture-img"></div>
+                                 <a href=" " class="section__btn section__btn_center"><span class="section__btn-inner section__btn-inner_connect">unconnect</span></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="section__more">
+                                 <div class="section__more-circle"></div>
+                                 <div class="section__more-circle"></div>
+                                 <div class="section__more-circle"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                     <!--  DESITINATIONS -->
+                     <section class="section">
+                        <div class="section__network">
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <div class="section__destinations">
+                                    <div class="section__destinations-box-1">
+                                       <h3 class="section__title section__title_destinations"> destinations</h3>
+                                    </div>
+                                    <div class="section__destinations-box-2">
+                                       <p class="section__destinations-text">  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+                                    </div>
+                                 </div>
+                                 <div class="section__destinations">
+                                    <div class="section__destinations-box-1">
+                                       <h3 class="section__title section__title_destinations">destinations</h3>
+                                    </div>
+                                    <div class="section__destinations-box-2">
+                                       <p class="section__destinations-text">  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+                                    </div>
+                                 </div>
+                                 <div class="section__destinations">
+                                    <div class="section__destinations-box-1">
+                                       <h3 class="section__title section__title_destinations"> destinations</h3>
+                                    </div>
+                                    <div class="section__destinations-box-2">
+                                       <p class="section__destinations-text">  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                  </main>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="libs/jquery/dist/jquery.min.js"></script>
+      <script src="js/libs.min.js"></script>
+      <!-- build:js -->
+      <script src="libs/lity/dist/lity.min.js">  </script>
+      <script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
+      <script src="js/main.js"></script>
+      <script>  
+         function initMap() {
+           var map = new google.maps.Map(document.getElementById('map'), {
+             zoom: 15,
+             center: {lat: 50.349635, lng: 30.955717}
+           });
+         
+           setMarkers(map);
+         }
+         
+         // Data for the markers consisting of a name, a LatLng and a zIndex for the
+         // order in which these markers should display on top of each other.
+         var beaches = [
+           ['Студия-магазин', 50.349635, 30.955717],
+           ['Центр красоты', 50.357583, 30.940998],
+         ];
+         
+         function setMarkers(map) {
+           // Adds markers to the map.
+         
+           // Marker sizes are expressed as a Size of X,Y where the origin of the image
+           // (0,0) is located in the top left of the image.
+         
+           // Origins, anchor positions and coordinates of the marker increase in the X
+           // direction to the right and in the Y direction down.
+           var image = {
+             url: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+             // This marker is 20 pixels wide by 32 pixels high.
+             size: new google.maps.Size(20, 32),
+             // The origin for this image is (0, 0).
+             origin: new google.maps.Point(0, 0),
+             // The anchor for this image is the base of the flagpole at (0, 32).
+             anchor: new google.maps.Point(0, 32)
+           };
+           // Shapes define the clickable region of the icon. The type defines an HTML
+           // <area> element 'poly' which traces out a polygon as a series of X,Y points.
+           // The final coordinate closes the poly by connecting to the first coordinate.
+           var shape = {
+             coords: [1, 1, 1, 20, 18, 20, 18, 1],
+             type: 'poly'
+           };
+           for (var i = 0; i < beaches.length; i++) {
+             var beach = beaches[i];
+             var marker = new google.maps.Marker({
+               position: {lat: beach[1], lng: beach[2]},
+               map: map,
+               icon: image,
+               shape: shape,
+               title: beach[0],
+               zIndex: beach[3]
+             });
+           }
+         }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSCdhkGshrBOsjkmULOzte097gHDRDilw&callback=initMap"</script>
+      <!-- endbuild -->
+   </body>
+</html>

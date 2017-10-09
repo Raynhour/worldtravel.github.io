@@ -1,0 +1,74 @@
+.header {
+	&__form {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	&__wrap {
+		height: 100%;
+		float:none;
+		&_right {
+			float:none;
+		}
+	}
+	&__box {
+		max-width:100%;
+		top:51px;
+	}
+}
+
+.section__box {
+	&_about {
+		width: 100%;
+		&-2 {
+			width: 100%;
+			margin-left: 0px;
+		}
+	}
+}
+
+.section {
+	&__title {
+		&_left {
+			text-align:center;
+		}
+		&_destinations {
+			font-size: 17px;
+		}
+	}
+	&_team {
+		padding:60px;
+	}
+	&__wrap {
+		display: block;
+		text-align: center;
+	}
+	&__tag {
+		margin-right: 0px;
+		margin-top: 10px;	
+	}
+	&__picture {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&__destinations {
+		min-height:200px;
+		padding:0px;
+	}
+	&-blog__content {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+.inbox {
+	width:100%;
+	&_border-left {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	&__description{
+		&_messages {
+		    width: calc(85% - 10px);
+		}
+	}
+}
