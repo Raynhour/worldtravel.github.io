@@ -1,0 +1,17 @@
+.header {
+	&__form {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	&__wrap {
+		height: 100%;
+		float:none;
+		&_right {
+			float:none;
+		}
+	}
+	&__box {
+		max-width:100%;
+		top:51px;
+	}
+}
