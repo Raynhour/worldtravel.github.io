@@ -9,7 +9,10 @@
       <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
       <link rel="stylesheet" href="css/libs.css">
       <!-- endbuild -->
+      <link rel="stylesheet" href="libs/lity/dist/lity.min.css">
+      <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.carousel.min.css">
       <!-- build:css2 -->
+      <link rel="stylesheet" href="css/main.min.css">
       <link rel="stylesheet" href="css/main.css">
       <!-- endbuild -->
       <!-- <script src="https://unpkg.com/vue/dist/vue.js"></script> -->
@@ -107,7 +110,7 @@
                            <li class="menu-nav__item"><a href="" class="menu-nav__link menu-nav__link_forums"><span class="menu-nav__img"><img src="img/forum.png" alt="" class=""></span>forums</a></li>
                            <li class="menu-nav__item"><a href="blog.html" class="menu-nav__link menu-nav__link_blog"><span class="menu-nav__img"><img src="img/blog.png" alt="" class=""></span>blog</a></li>
                            <li class="menu-nav__item"><a href="" class="menu-nav__link menu-nav__link_invites"><span class="menu-nav__img"><img src="img/send.png" alt="" class=""></span>send invites</a></li>
-                           <li class="menu-nav__item"><a href="media.html" class="menu-nav__link menu-nav__link_messages"><span class="menu-nav__img"><img src="img/media.png" alt="" class=""></span>media</a></li>
+                           <li class="menu-nav__item"><a href="media.html" class="menu-nav__link menu-nav__link_messages"><span class="menu-nav__img"><img src="img/mediamenu.png" alt="" class=""></span>media</a></li>
                            <li class="menu-nav__item"><a href="settings_general.html" class="menu-nav__link menu-nav__link_messages"><span class="menu-nav__img"><img src="img/settings.png" alt="" class=""></span>settings</a></li>
                            <li class="menu-nav__item"><a href="messenger.html" class="menu-nav__link menu-nav__link_messages"><span class="menu-nav__img"><img src="img/payments.png" alt="" class=""></span>payments</a></li>
                         </ul>
@@ -115,72 +118,67 @@
                   </aside>
                </div>
                <div class="col-md-9">
+                  <!-- SETTING GENERAL -->
                   <main class="main">
-                     <section class="section section-blog">
-                        <div class="section-blog__content">
-                           <div class="row">
-                              <div class="col-md-12">
-                                 <h2 class="section__title section__title_blog">belogradchik fortress</h2>
-                                 <p class="section-blog__date">02.10.2017<span class="section-blog__date-inner">14:42</span></p>
-                                 <div class="section-blog__img" style="background:url(img/blog-img.png);"></div>
-                                 <p class="section-blog__description">Situated amid a cluster of strange shaped rocks, and almost blending in with them, the Belogradchik Fortress is one of Bulgaria’s top visitor attractions and among the most famous. Originally built by the Romans, it was later expanded by the Byzantines, Bulgarians and Turks. The natural landscape, combined with the buildings themselves, make Belogradchik an atmospheric, almost haunting site to visit. And its history reflects this – with the fortress having been the site of many battles, as well as seeing a series of brutal executions during the Belogradchik uprising of 1850.</p>
+                     <section class="section section_s_generals">
+                        <div class="title">
+                           <div class="col-md-6">
+                              <h1>Settings</h1>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="pull-right">
+                                 
                               </div>
                            </div>
                         </div>
-                        <div class="section-author">
-                           <div class="row">
-                              <div class="col-md-12">
-                                 <p class="section-author__text section-author__text_blue">Author: <span class="section-author__text-inner section-author__text-inner_name">Thomas Meyer</span>, <span class="section-author__text-inner section-author__text-inner_office">Director</span>, 
-                                    <span class="section-author__text-inner section-author__text-inner_company">NBC</span>, 
-                                    <span class="section-author__text-inner section-author__text-inner_city">Orlando</span>, 
-                                    <span class="section-author__text-inner section-author__text-inner_country">USA</span>
-                                 </p>
-                                 <div class="section-author__like">
-                                    <span>
-                                    <img src="img/hearth.png" alt="">
-                                    </span>
-                                    <span class="section-author__like-inner">20</span>
-                                 </div>
-                              </div>
+                       <div class="content-block">
+                           <ul>
+                              <li class="active"><a href="settings_general.html">General</a></li>
+                              <li><a href="settings_email.html">Email notifications</a></li>
+                              <li><a href="settings_profile_visibility.html">Profile visibility</a></li>
+                           </ul>
+
+                           <form>
+                               <label for="changeEmail">Change account Email</label>
+                               <input type="email" class="form-control" id="changeEmail">
+                               
+                               <p class="change-password">Change Password (leave blank for no change)</p>
+                               <label class="text-regular" for="newPassword">New Password</label>
+                               <input type="password" class="form-control" id="newPassword">
+                               <label class="text-regular2" for="repeatNewPassword">Repeat New Password</label>
+                               <input type="password" class="form-control" id="repeateNewPassword">
+                               <label for="currentPassword">Current Password (required to updateemail or change current password)</label>
+                               <input type="password" class="form-control" id="repeateNewPassword">
+
+                               <a href="">Lost your password?</a>
+
+                              <div class="form-group save-changes">
+                               <button type="submit" class="btn btn-primary">Save changes</button>
+                             </div>
+                              </form>
                            </div>
-                        </div>
-                        <div class="section-blog__comments">
-                           <div class="row">
-                              <div class="col-md-12">
-                                 <p class="section-blog__comments-title">Comments<span class="section-blog__comments-title-inner"> 4</span></p>
-                                 <div class="section-blog__comments-box">
-                                    <div class="section__avatars section__avatars_mini" style="background-image: url(img/miniavatars.png);"></div>
-                                    <div class="section-blog__comments-content">
-                                       <p class="section-author__text">Author: <span class="section-author__text-inner section-author__text-inner_name">Thomas Meyer</span>, <span class="section-author__text-inner section-author__text-inner_office">Director</span>, 
-                                          <span class="section-author__text-inner section-author__text-inner_company">NBC</span>, 
-                                          <span class="section-author__text-inner section-author__text-inner_city">Orlando</span>, 
-                                          <span class="section-author__text-inner section-author__text-inner_country">USA</span>
-                                       </p>
-                                       <p class="section-blog__comments-date">02.10.2017 14:42</p>
-                                       <div class="clearfix"></div>
-                                       <p class="section-blog__comments-text">Situated amid a cluster of strange shaped rocks, and almost blending in with them, the Belogradchik Fortress is one of Bulgaria’s top visitor attractions and among the most famous. Originally built by the Romans, it was later expanded by the and Turks. The natural landscape, combined with the buildings themselves, </p>
-                                    </div>
-                                 </div>
-                                 <div class="section-blog__comments-box">
-                                    <div class="section__avatars section__avatars_mini" style="background-image: url(img/miniavatars.png)"></div>
-                                    <div class="section-blog__comments-content">
-                                       <p class="section-author__text">Author: <span class="section-author__text-inner section-author__text-inner_name">Thomas Meyer</span>, <span class="section-author__text-inner section-author__text-inner_office">Director</span>, 
-                                          <span class="section-author__text-inner section-author__text-inner_company">NBC</span>, 
-                                          <span class="section-author__text-inner section-author__text-inner_city">Orlando</span>, 
-                                          <span class="section-author__text-inner section-author__text-inner_country">USA</span>
-                                       </p>
-                                       <p class="section-blog__comments-date">02.10.2017 14:42</p>
-                                       <div class="clearfix"></div>
-                                       <p class="section-blog__comments-text">Situated amid a cluster of strange shaped rocks, and almost blending in with them, the Belogradchik Fortress is one of Bulgaria’s top visitor attractions and among the most famous. Originally built by the Romans, it was later expanded by the and Turks. The natural landscape, combined with the buildings themselves, </p>
-                                    </div>
-                                 </div>
-                                 <div class="clearfix"></div>
-                                 <form action="" method="" class="section-blog__comments-form">
-                                    <textarea placeholder="Write a comment" class="section-blog__comments-text section-blog__comments-field"></textarea>
-                                    <button class="section-blog__comments-btn">add</button>
-                                 </form>
-                              </div>
-                           </div>
+                    </section>
+                     <section class="change-info">
+                        <h3>Change adress</h3>
+                        <p><span>Billing Address</span></p>
+                        <p>You have not set up this type of adress yet.</p>
+                        <div class="form-group">
+                           <button type="submit" class="btn btn-primary">Edit</button>
+                       </div>
+                     </section>
+                     <section class="change-info">
+                        <h3>Delete your account</h3>
+                        <p class="attantion">Deleting your account will delete all of the content you have created. It will be completely irrecoverable.</p>
+                        <div class="checkbox">
+                           <label>
+                               <input type="checkbox" value="">
+                               <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                               I understand the consequences.
+                           </label>
+                       </div>
+
+                        <div class="form-group">
+                           <button type="submit" class="btn btn-primary">Delete account</button>
                         </div>
                      </section>
                   </main>
@@ -189,10 +187,67 @@
          </div>
       </div>
       <script src="libs/jquery/dist/jquery.min.js"></script>
-      <script src="libs/lity/dist/lity.min.js"></script>
       <script src="js/libs.min.js"></script>
       <!-- build:js -->
+      <script src="libs/swiper/swiper.js"></script>
+      <script src="libs/lity/dist/lity.min.js">  </script>
+      <script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
       <script src="js/main.js"></script>
+      <script>  
+         function initMap() {
+           var map = new google.maps.Map(document.getElementById('map'), {
+             zoom: 15,
+             center: {lat: 50.349635, lng: 30.955717}
+           });
+         
+           setMarkers(map);
+         }
+         
+         // Data for the markers consisting of a name, a LatLng and a zIndex for the
+         // order in which these markers should display on top of each other.
+         var beaches = [
+           ['Студия-магазин', 50.349635, 30.955717],
+           ['Центр красоты', 50.357583, 30.940998],
+         ];
+         
+         function setMarkers(map) {
+           // Adds markers to the map.
+         
+           // Marker sizes are expressed as a Size of X,Y where the origin of the image
+           // (0,0) is located in the top left of the image.
+         
+           // Origins, anchor positions and coordinates of the marker increase in the X
+           // direction to the right and in the Y direction down.
+           var image = {
+             url: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+             // This marker is 20 pixels wide by 32 pixels high.
+             size: new google.maps.Size(20, 32),
+             // The origin for this image is (0, 0).
+             origin: new google.maps.Point(0, 0),
+             // The anchor for this image is the base of the flagpole at (0, 32).
+             anchor: new google.maps.Point(0, 32)
+           };
+           // Shapes define the clickable region of the icon. The type defines an HTML
+           // <area> element 'poly' which traces out a polygon as a series of X,Y points.
+           // The final coordinate closes the poly by connecting to the first coordinate.
+           var shape = {
+             coords: [1, 1, 1, 20, 18, 20, 18, 1],
+             type: 'poly'
+           };
+           for (var i = 0; i < beaches.length; i++) {
+             var beach = beaches[i];
+             var marker = new google.maps.Marker({
+               position: {lat: beach[1], lng: beach[2]},
+               map: map,
+               icon: image,
+               shape: shape,
+               title: beach[0],
+               zIndex: beach[3]
+             });
+           }
+         }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSCdhkGshrBOsjkmULOzte097gHDRDilw&callback=initMap"</script>
       <!-- endbuild -->
    </body>
 </html>

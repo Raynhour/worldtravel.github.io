@@ -245,6 +245,30 @@
   text-indent: 32px;
 }
 
+.header__search::-webkit-input-placeholder {
+  color: #002d40;
+  padding-left: 3px;
+  font-family: "MonsterRegular";
+}
+
+.header__search::-moz-placeholder {
+  color: #002d40;
+  padding-left: 3px;
+  font-family: "MonsterRegular";
+}
+
+.header__search:-ms-input-placeholder {
+  color: #002d40;
+  padding-left: 3px;
+  font-family: "MonsterRegular";
+}
+
+.header__search::placeholder {
+  color: #002d40;
+  padding-left: 3px;
+  font-family: "MonsterRegular";
+}
+
 .header__box {
   width: 380px;
   position: absolute;
@@ -317,6 +341,14 @@
 #map {
   height: 235px;
   margin-top: 25px;
+}
+
+.section ul li a {
+  color: #212121;
+}
+
+.section ul li a:hover {
+  color: #ff414d;
 }
 
 .wrapper {
@@ -577,7 +609,10 @@
   text-transform: uppercase;
   line-height: 38px;
   position: relative;
-  padding-left: 7px;
+}
+
+.section__btn-inner_connect {
+  padding-left: 10px;
 }
 
 .section-company__title {
@@ -1152,6 +1187,10 @@
   text-align: center;
 }
 
+.section-blog {
+  padding-bottom: 20px;
+}
+
 .section-blog__padding {
   padding: 0px 22px;
 }
@@ -1238,14 +1277,25 @@
   position: relative;
   width: 100%;
   margin-left: 35px;
+  text-align: center;
 }
 
-.section-blog__form::before {
+.section-blog__form_margin {
+  margin-left: 0px;
+}
+
+.section-blog__form-search {
+  width: 245px;
+  height: 36px;
+  position: relative;
+}
+
+.section-blog__form-search::before {
   content: "";
   position: absolute;
   width: 18px;
   height: 100%;
-  top: 9px;
+  top: 0px;
   cursor: pointer;
   left: 16px;
   background: url("../img/headsearch.png") no-repeat;
@@ -1309,9 +1359,42 @@
   margin-bottom: 30px;
 }
 
+.section-blog__wrap {
+  position: relative;
+}
+
+.section-blog__warning {
+  display: block;
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 1px solid #ff414d;
+  right: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-blog__warning-inner {
+  font-family: "MonsterEBold";
+  color: #ff414d;
+  font-size: 24px;
+}
+
 .section-blog__comments {
   padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 .section-blog__comments-title {
@@ -1466,6 +1549,7 @@
   font-family: "MonsterBold";
   font-size: 16px;
   color: #fff;
+  text-align: center;
   text-transform: uppercase;
   line-height: 38px;
   position: relative;
@@ -1474,6 +1558,90 @@
   border: none;
   margin-top: 20px;
   width: 120px;
+}
+
+.section-form__btn_blog {
+  margin-top: 0px;
+  margin-left: 30px;
+}
+
+.section-form__btn_center {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-form__wrap {
+  width: 245px;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  margin-left: 25px;
+}
+
+.section-form__wrap_width {
+  width: 150px;
+  margin-left: 0px;
+}
+
+.section-form__wrap_inbox {
+  width: 90px;
+  margin-left: 0px;
+}
+
+.section-form__select {
+  width: 100%;
+  height: 36px;
+  border: none;
+  outline: none;
+  -webkit-border-radius: 17px;
+          border-radius: 17px;
+  cursor: pointer;
+  font-family: "MonsterRegular";
+  padding-left: 10px;
+  padding-right: 20px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: #212121;
+  font-size: 14px;
+  position: relative;
+}
+
+.section-form__select option {
+  font-size: 14px;
+  font-family: "MonsterRegular";
+  color: #212121;
+  text-transform: capitalize;
+}
+
+.section-form__select_title {
+  font-family: "MonsterBold";
+  font-size: 14px;
+  color: #002d40;
+  text-transform: uppercase;
+}
+
+.section-form__select-arrow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin-right: 17px;
+  left: 0;
+}
+
+.section-form__select-arrow::after {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  top: -webkit-calc(50% - 5px);
+  top: calc(50% - 5px);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 8px solid #ff414d;
 }
 
 .inbox_width {
@@ -1880,6 +2048,14 @@
 
 .popup .swiper-container {
   background-color: transparent;
+}
+
+.media-tabs-nav li a {
+  color: #212121;
+}
+
+.media-tabs-nav li a:hover {
+  color: #ff414d;
 }
 
 @media (max-width: 1024px) {

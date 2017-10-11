@@ -94,6 +94,11 @@
 		font-family: $MonRegular;
 		color: $main-color;
 		text-indent: 32px;
+		&::placeholder {
+			color: $main-color;
+			padding-left: 	3px;
+			font-family: $MonRegular;
+		}
 	}
 	&__box {
 		width: 380px;
@@ -152,6 +157,13 @@
 #map {
 	height: 235px;
 	margin-top: 25px;
+}
+
+.section ul li a{
+	color: #212121;
+	&:hover {
+		color: $pink-color;
+	}
 }
 
 .wrapper {
@@ -409,18 +421,9 @@
 			text-transform: uppercase;
 			line-height: 38px;
 			position: relative;
-			padding-left: 7px;
-		// 	&_connect {
-		// 		&::before {
-		// 	position: absolute;
-		// 	content:"";
-		// 	width: 14px;
-		// 	height: 24px;
-		// 	background:url("../img/light.png") no-repeat;
-		// 	left: -16px;
-		// 	top:0;
-		// }
-		// 	}
+				&_connect {
+padding-left: 10px;
+		 	}
 		}
 	}
 	&-company {
@@ -887,6 +890,7 @@
 		}
 	}
 	&-blog {
+		padding-bottom: 20px;
 		&__padding {
 			padding: 0px 22px;
 		}
@@ -954,15 +958,28 @@
 		position: relative;
 		width: 100%;
 		margin-left: 35px;
-		&::before {
-			content:"";
+		text-align: 	center;
+		&_margin {
+			margin-left: 	0px;
+		}
+			&-search {
+				width:245px;
+				height:36px;
+				position: relative;
+				&::before {
+					content:"";
 			position: absolute;
 			width: 18px;
 			height: 100%;
-			top:9px;
+			top:0px;
 			cursor:pointer;
 			left:16px;
 			background:url("../img/headsearch.png") no-repeat;
+				}
+			}
+
+		&::before {
+			
 		}
 	}
 		&__header {
@@ -1009,9 +1026,29 @@
 			margin-top: 37px;
 			margin-bottom: 30px;
 		}
+		&__wrap {
+			position: relative;
+		}
+		&__warning {
+			display: block;
+			position: absolute;
+			width:42px;
+			height:42px;
+			border-radius:50%;
+			border:1px solid $pink-color;
+			right:0;
+			top:0;
+			display: flex;
+			align-items:center;
+			justify-content:center;
+			&-inner {
+				font-family:$MonEBold;
+				color: $pink-color;
+				font-size: 	24px; 	
+			}
+		}
 		&__comments {
 			padding-top: 25px;
-			padding-bottom: 25px;
 			&-title {
 				font-family: $MonMedium;
 				font-size: 24px;
@@ -1139,6 +1176,7 @@
 			font-family: "MonsterBold";
     		font-size: 16px;
     		color: #fff;
+    		text-align: 	center;
     		text-transform: uppercase;
     		line-height: 38px;
     		position: relative;
@@ -1147,6 +1185,77 @@
     		border:none;
     		margin-top: 20px;
     		width: 120px;
+    		&_blog {
+    			margin-top: 	0px;
+    		    margin-left: 	30px;
+    		}
+
+    		&_center {
+    			margin-top: 20px;
+    			margin-left:auto;
+    			margin-right: auto;
+    		}
+		}
+		&__wrap {
+			width:245px;
+			display: inline-block;
+			position: relative;
+			height: 100%;
+			margin-left:25px;
+			&_width {
+    			width: 150px;
+    			margin-left: 	0px;
+    		}
+    		&_inbox {
+    			width:90px;
+    			margin-left: 	0px;
+    		}
+		}
+		&__select {
+			width:100%;
+			height:36px;
+			border:none;
+			outline:none;
+			border-radius:17px;
+			cursor:pointer;
+			font-family: $MonRegular;
+			padding-left: 10px;
+			padding-right: 	20px;
+			appearance: none;
+			color: #212121;
+			font-size: 	14px;
+			position: 	relative;
+			& option {
+				font-size: 14px;
+				font-family: $MonRegular;
+				color: #212121;
+				text-transform: capitalize;	
+			}
+			&_title {
+				font-family: $MonBold;
+				font-size: 14px;
+				color: $main-color;
+				text-transform: uppercase;
+			}
+	     	&-arrow {
+	     		position: absolute;
+	     		right:0;
+	     		bottom:0;
+	     		top:0;
+	     		margin-right: 	17px;
+	     		left:0;
+	     					&::after {
+				position: absolute;
+				content:"";
+				z-index: 1;
+				bottom:0;
+				right:0;
+				top:calc(50% - 5px);
+				border-left: 4px solid transparent;
+				border-right: 4px solid transparent;
+				border-top: 8px solid $pink-color;
+			}
+	     	}
 		}
 	}
 }
@@ -1466,3 +1575,9 @@ background: $main-color;
 	background-color: transparent;
 }
 
+.media-tabs-nav li a {
+	color: #212121;
+	&:hover {
+		color:$pink-color;
+	}
+}

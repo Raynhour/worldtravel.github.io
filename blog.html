@@ -10,6 +10,7 @@
       <link rel="stylesheet" href="css/libs.css">
       <!-- endbuild -->
       <!-- build:css2 -->
+
       <link rel="stylesheet" href="css/main.css">
       <!-- endbuild -->
       <!-- <script src="https://unpkg.com/vue/dist/vue.js"></script> -->
@@ -41,12 +42,12 @@
                </div>
                <div class="col-md-3 col-md-offset-3 col-xs-12 col-xs-offset-0">
                   <div class="header__wrap header__wrap_right">
-                     <span class="header__link">
+                     <a href="notifications.html" class="header__link">
                         <img src="img/notifications.png" alt="">
                         <div class="header__link-inner">
                            <div class="header__link-text">3</div>
                         </div>
-                     </span>
+                     </a>
                      <span class="header__link" id="message">
                         <img src="img/headmail.png" alt="">
                         <div class="header__link-inner">
@@ -102,7 +103,6 @@
                            <li class="menu-nav__item"><a href="profile.html" class="menu-nav__link menu-nav__link_profile"><span class="menu-nav__img"><img src="img/profile.png" alt="" class=""></span>profile</a></li>
                            <li class="menu-nav__item"><a href="" class="menu-nav__link menu-nav__link_companies"><span class="menu-nav__img"><img src="img/companies.png" alt="" class=""></span>my companies</a></li>
                            <li class="menu-nav__item"><a href="" class="menu-nav__link menu-nav__link_friends"><span class="menu-nav__img"><img src="img/partners.png" alt="" class=""></span>partners</a></li>
-                           <li class="menu-nav__item"><a href="notfications.html" class="menu-nav__link menu-nav__link_notifications"><span class="menu-nav__img"><img src="img/notifications.png" alt="" class=""></span>notifications</a></li>
                            <li class="menu-nav__item"><a href="" class="menu-nav__link menu-nav__link_groups"><span class="menu-nav__img"><img src="img/groups.png" alt="" class=""></span>groups</a></li>
                            <li class="menu-nav__item"><a href="" class="menu-nav__link menu-nav__link_forums"><span class="menu-nav__img"><img src="img/forum.png" alt="" class=""></span>forums</a></li>
                            <li class="menu-nav__item"><a href="blog.html" class="menu-nav__link menu-nav__link_blog"><span class="menu-nav__img"><img src="img/blog.png" alt="" class=""></span>blog</a></li>
@@ -124,8 +124,20 @@
                                     <div class="section-blog__padding">
                                        <div class="section-blog__header-center">
                                           <h2 class="section__title section__title_blog-header">blog</h2>
-                                          <form form="" action="" class="section-blog__form ">
-                                              <input type="text" class="header__search">
+                                          <form form="" action="" class="section-blog__form "> 
+                                             <span class="section-blog__form-search">
+                                              <input type="text" class="header__search" placeholder="Search">
+                                             </span>
+                                              <div class="section-form__wrap"><span class="section-form__select-arrow"> </span>
+                                              <select name="" id="" class="section-form__select">
+
+                                                 <option value="" disabled selected>All categories</option>
+                                                 <option value="">everyone</option>
+                                                 <option value="">everyone</option>
+                                              </select>
+                                                 </div>
+                                                 <button class="section-form__btn section-form__btn_blog"> submit</button>
+                                              
                                         </form>
                                        </div>
                                     </div>
@@ -139,7 +151,10 @@
                                        <div class="section-blog__left">
                                           <div class="section-blog__thumbnail" style="background-image:url(img/thumbnail.png);"></div>
                                        </div>
-                                       <div>
+                                       <div class="section-blog__wrap">
+                                          <div class="section-blog__warning">
+                                             <div class="section-blog__warning-inner">!</div> 
+                                          </div>
                                           <p class="section-author__text section-author__text_blue section-author__text_float"><span class="section-author__text-inner section-author__text-inner_name">Thomas Meyer</span>, <span class="section-author__text-inner section-author__text-inner_office">Director</span>, 
                                     <span class="section-author__text-inner section-author__text-inner_company">NBC</span>, 
                                     <span class="section-author__text-inner section-author__text-inner_city">Orlando</span>, 
@@ -171,7 +186,10 @@
                                        <div class="section-blog__left">
                                           <div class="section-blog__thumbnail" style="background-image:url(img/thumbnail.png);"></div>
                                        </div>
-                                       <div>
+                                       <div class="section-blog__wrap">
+                                       <div class="section-blog__warning">
+                                             <div class="section-blog__warning-inner">!</div> 
+                                          </div>
                                           <p class="section-author__text section-author__text_blue section-author__text_float"><span class="section-author__text-inner section-author__text-inner_name">Thomas Meyer</span>, <span class="section-author__text-inner section-author__text-inner_office">Director</span>, 
                                     <span class="section-author__text-inner section-author__text-inner_company">NBC</span>, 
                                     <span class="section-author__text-inner section-author__text-inner_city">Orlando</span>, 
@@ -203,7 +221,10 @@
                                        <div class="section-blog__left">
                                           <div class="section-blog__thumbnail" style="background-image:url(img/thumbnail.png);"></div>
                                        </div>
-                                       <div>
+                                       <div class="section-blog__wrap">
+                                       <div class="section-blog__warning">
+                                             <div class="section-blog__warning-inner">!</div> 
+                                          </div>
                                           <p class="section-author__text section-author__text_blue section-author__text_float"><span class="section-author__text-inner section-author__text-inner_name">Thomas Meyer</span>, <span class="section-author__text-inner section-author__text-inner_office">Director</span>, 
                                     <span class="section-author__text-inner section-author__text-inner_company">NBC</span>, 
                                     <span class="section-author__text-inner section-author__text-inner_city">Orlando</span>, 
@@ -235,7 +256,10 @@
                                        <div class="section-blog__left">
                                           <div class="section-blog__thumbnail" style="background-image:url(img/thumbnail.png);"></div>
                                        </div>
-                                       <div>
+                                       <div class="section-blog__wrap">
+                                         <div class="section-blog__warning">
+                                             <div class="section-blog__warning-inner">!</div> 
+                                          </div>
                                           <p class="section-author__text section-author__text_blue section-author__text_float"><span class="section-author__text-inner section-author__text-inner_name">Thomas Meyer</span>, <span class="section-author__text-inner section-author__text-inner_office">Director</span>, 
                                     <span class="section-author__text-inner section-author__text-inner_company">NBC</span>, 
                                     <span class="section-author__text-inner section-author__text-inner_city">Orlando</span>, 
@@ -267,7 +291,10 @@
                                        <div class="section-blog__left">
                                           <div class="section-blog__thumbnail" style="background-image:url(img/thumbnail.png);"></div>
                                        </div>
-                                       <div>
+                                       <div class="section-blog__wrap">
+                                       <div class="section-blog__warning">
+                                             <div class="section-blog__warning-inner">!</div> 
+                                          </div>
                                           <p class="section-author__text section-author__text_blue section-author__text_float"><span class="section-author__text-inner section-author__text-inner_name">Thomas Meyer</span>, <span class="section-author__text-inner section-author__text-inner_office">Director</span>, 
                                     <span class="section-author__text-inner section-author__text-inner_company">NBC</span>, 
                                     <span class="section-author__text-inner section-author__text-inner_city">Orlando</span>, 
@@ -295,7 +322,9 @@
                                        <div class="clearfix"></div>
                                     </div>
                                  </div>
-                                 <div class="section-blog__comments-btn">load more</div>
+                                 <form action=" " class="section-blog__form">
+                                 <button class="section-form__btn section-form__btn_center">load more</button>
+                                 </form>    
                               </div>
                            </div>
                         </div>
