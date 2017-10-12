@@ -322,6 +322,7 @@
 		}
 		&_destinations {
 			margin-top: 0px;
+			text-align: left;
 		}
 		&_blog {
 			font-size:36px;
@@ -414,6 +415,9 @@
 			background:$blue-color;
 			margin-top: 10px;
 		}
+		&_margin {
+			margin-top: 28px;
+		}
 		&-inner {
 			font-family: $MonBold;
 			font-size: 16px;
@@ -489,6 +493,9 @@ padding-left: 10px;
 		font-size: 14px;
 		font-family: $MonMedium;
 		position: relative;
+		&:last-child {
+			margin-bottom: 35px;
+		}
 		&::before {
 			position: absolute;
 			content:"";
@@ -642,6 +649,9 @@ padding-left: 10px;
 			width: 50px;
 			height: 50px;
 			margin-top: 0px;
+		}
+		&_margin {
+			margin-top: 48px;
 		}	
 	}
 	&__names {
@@ -661,6 +671,9 @@ padding-left: 10px;
 			&_country {
 				display: inline-block;
 			}
+		}
+		&_margin {
+			margin-top: 48px;
 		}
 	}
 
@@ -767,7 +780,6 @@ padding-left: 10px;
 		padding-left: 37px;
 		padding-right: 37px;
 		display: flex;
-		justify-content:center;
 		align-items:center;
 		height:100px;
 		border-bottom:1px solid #d6d6d6;
@@ -776,11 +788,11 @@ padding-left: 10px;
 		}
 		&-box-1 {
 			float:left;
-			width:30%;
+			width:35%;
 			margin-right: 60px;
 		}
 		&-box-2 {
-			width:70%;
+			width:65%;
 			float:left;
 		}
 		&-text {
@@ -1256,6 +1268,22 @@ padding-left: 10px;
 				border-top: 8px solid $pink-color;
 			}
 	     	}
+	     	&-settings {
+	     		position: absolute;
+	     		
+	     		bottom:0;
+	     		top: 11px;
+    			left: -6px;
+	     					&::after {
+				position: absolute;
+				content:"";
+				width: 13px;
+				height: 13px;
+				background-image:url("../img/gear.png");
+				background-repeat:no-repeat;
+				z-index: 1;
+			}
+	     	}
 		}
 	}
 }
@@ -1281,6 +1309,7 @@ padding-left: 10px;
 	}
 	&__header {
 		border-bottom:1px solid #d6d6d6;
+		position: relative;
 	}
 
 	&__list {
@@ -1292,6 +1321,17 @@ padding-left: 10px;
 		text-align: center;
 		z-index: 1;
 		top:45px;
+	}
+	&__checkbox {
+		width:14px;
+		height:14px;
+		position: absolute;
+		left: -11px;
+    	top: 5px;
+    	&_all {
+    		bottom:5px;
+    		top:inherit;
+    	}
 	}
 	&__item {
 		font-family: $MonMedium;
@@ -1342,6 +1382,7 @@ padding-left: 10px;
 		border-bottom:1px solid #d6d6d6;
 		float:left;
 		width: 100%;
+		position: relative;
 	}
 	&__triangle {
 		display: inline-block;
