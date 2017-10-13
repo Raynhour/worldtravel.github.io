@@ -107,7 +107,7 @@
 		left:0;
 		display: none;
 		box-shadow:1px 0px 10px rgba(0,0,0, .1);
-		z-index: 1;
+		z-index: 5;
 		background:$white-color;
 		&-top {
 			border-bottom:1px solid #d6d6d6;
@@ -1161,6 +1161,9 @@ padding-left: 10px;
 			&-inner {
 				font-family: inherit;
 				color: $main-color;
+				&_name-blog {
+					color: $pink-color;
+				}
 			}
 			&_float {
 				float:none;
@@ -1175,6 +1178,7 @@ padding-left: 10px;
 				font-size: 18px;
 				color: $main-color;
 				font-family: $MonMedium;
+
 			}
 		}
 	}
@@ -1435,7 +1439,7 @@ padding-left: 10px;
 .modal-edit {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 10; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;

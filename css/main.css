@@ -277,7 +277,7 @@
   display: none;
   -webkit-box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+  z-index: 5;
   background: #fff;
 }
 
@@ -1530,6 +1530,10 @@
   color: #002d40;
 }
 
+.section-author__text-inner_name-blog {
+  color: #ff414d;
+}
+
 .section-author__text_float {
   float: none;
 }
@@ -1873,7 +1877,7 @@
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 10;
   /* Sit on top */
   padding-top: 100px;
   /* Location of the box */
