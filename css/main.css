@@ -426,6 +426,7 @@
 
 .section_team {
   padding-left: 45px;
+  padding-right: 45px;
 }
 
 .section-company {
@@ -476,9 +477,17 @@
   margin-bottom: 0px;
 }
 
+.section__title_margin {
+  margin-bottom: 20px;
+}
+
 .section__title_subtitle {
   margin-top: 0px;
   margin-bottom: 33px;
+}
+
+.section__title_company {
+  text-align: left;
 }
 
 .section__title_left {
@@ -1508,7 +1517,7 @@
   font-family: "MonsterMedium";
   margin-bottom: 0px;
   font-size: 18px;
-  color: #ff414d;
+  color: #002d40;
   float: left;
 }
 
@@ -1518,7 +1527,7 @@
 
 .section-author__text-inner {
   font-family: inherit;
-  color: #ff414d;
+  color: #002d40;
 }
 
 .section-author__text_float {
