@@ -1,6 +1,11 @@
 $('document').ready(function(){
 	$('#message').click(function(){
 		$(".header__box").toggle();
+		$(".close-wrap").toggle();
+	});
+	$('.close-wrap').click(function(){
+		$(".header__box").toggle();
+		$(".close-wrap").toggle();
 	});
 	$('#inbox-list').click(function(){
 		$(".inbox__list").toggle();
@@ -17,6 +22,8 @@ $('document').ready(function(){
 	    center:false,
 	    loop:true,
 		smartSpeed: 1000,
+		mouseDrag: false,
+		touchDrag: true,
 		fluidSpeed: true,
 	    responsive: {
 	    	0 : {

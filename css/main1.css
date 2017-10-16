@@ -1659,6 +1659,8 @@
 .content-notif .select {
   margin-left: 0px; 
 }
+
+
 .content-notif .select:after {
   content: "▼";
   color: #ff414d;
@@ -1689,6 +1691,13 @@
   border: 1px solid #D6D6D6;
   background: transparent; 
 }
+
+.content-notif .select select option {
+  font-size: 14px;
+  font-family: "monsterrat";
+  font-weight: 500;
+}
+
 .content-notif label {
   color: #002d40;
   font-size: 13px;
@@ -1953,6 +1962,10 @@
 
 /*SETTINGS PROFILE*/
 .profile-visibility p,.profile-visibility select {
+  font-family: "monsterrat", sans-serif;
+}
+
+.profile-visibility p,.profile-visibility select option {
   font-family: "monsterrat", sans-serif;
 }
 .profile-visibility {
