@@ -16,7 +16,8 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
 	<!-- Windows Phone -->
@@ -127,178 +128,86 @@
                </div>
                <div class="col-md-9">
                   <main class="main">
-                     <section class="section">
-                     	<div class="title">
-                     		<div class="col-md-6">
-	                     		<h1>Notifications</h1>
+                     <section class="section invites">
+                    	<div class="title">
+                     		<div class="col-md-5 col-sm-5 col-xs-12">
+	                     		<h1>Send invites</h1>
 	                     	</div>
-	                     	<div class="col-md-6">
+	                     	<div class="col-md-7 col-sm-7 col-xs-12">
 	                     		<div class="pull-right">
-		                     		
+		                     		<a href="sendinv_members.html" class="btn btn-invite">Invite new members</a>
+		                     		<a href="sendinv.html" class="btn btn-send">Sent invites</a>
 		                     	</div>
 	                     	</div>
+	                     	<div style="clear: both;"></div>
                      	</div>
-                     	<div class="content-notif">
-                     		<div class="col-md-8">
-	                     		<ul class="notif-tabs-nav">
-	                     			<li class="active">Unread</li>
-	                     			<li>Read</li>
-	                     		</ul>
-	                     	</div>
-	                     	<div class="col-md-4 form-inline select">
-												  <label class="mr-sm-2" for="orderBy">Order by</label>
-												  <select class="mb-2 mr-sm-2 mb-sm-0" id="orderBy">
-												    <option selected>Newest first</option>
-												    <option value="1">Oldest first</option>
-												  </select>
-	                     	</div>
-
-	                     	<div class="notifi-list">
-													<ul>
-														<li class="table-first-row">
-															<div class="col-md-6">
-																<div class="checkbox">
-											            <label>
-											                <input type="checkbox" value="">
-											                <span class="cr"><i class="cr-icon fa fa-check"></i></span>
-											                Notification
-											            </label>
-											        </div>
-															</div>
-															<div class="col-md-4 date-rec">
-																<h4>Date Received</h4>
-															</div>
-															<div class="col-md-2 text-center">
-																<h4>Actions</h4>
-															</div>
-														</li>
-														
-														<li>
-															<div class="col-md-6">
-																<div class="checkbox">
-											            <label>
-											                <input type="checkbox" value="">
-											                <span class="cr"><i class="cr-icon fa fa-check"></i></span>
-											                You have a friendship request from Pia Bech
-											            </label>
-											        </div>
-															</div>
-															<div class="col-md-4 date-rec">
-																1 week, 6 days ago
-															</div>
-															<div class="col-md-2 read-delete">
-																<div class="read">
-																	<a href="">read</a>
-																</div>
-																<div class="delete">
-																	<a href="">delete</a>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="col-md-6">
-																<div class="checkbox">
-											            <label>
-											                <input type="checkbox" value="">
-											                <span class="cr"><i class="cr-icon fa fa-check"></i></span>
-											                You have a friendship request from Filip Dalengaard
-											            </label>
-											        </div>
-															</div>
-															<div class="col-md-4 date-rec">
-																1 week, 6 days ago
-															</div>
-															<div class="col-md-2 read-delete">
-																<div class="read">
-																	<a href="">read</a>
-																</div>
-																<div class="delete">
-																	<a href="">delete</a>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="col-md-6">
-																<div class="checkbox">
-											            <label>
-											                <input type="checkbox" value="">
-											                <span class="cr"><i class="cr-icon fa fa-check"></i></span>
-											                WTN mentioned you
-											            </label>
-											        </div>
-															</div>
-															<div class="col-md-4 date-rec">
-																1 week, 6 days ago
-															</div>
-															<div class="col-md-2 read-delete">
-																<div class="read">
-																	<a href="">read</a>
-																</div>
-																<div class="delete">
-																	<a href="">delete</a>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="col-md-6">
-																<div class="checkbox">
-											            <label>
-											                <input type="checkbox" value="">
-											                <span class="cr"><i class="cr-icon fa fa-check"></i></span>
-											                One of your articles was approved, check it out!
-											            </label>
-											        </div>
-															</div>
-															<div class="col-md-4 date-rec">
-																1 week, 6 days ago
-															</div>
-															<div class="col-md-2 read-delete">
-																<div class="read">
-																	<a href="">read</a>
-																</div>
-																<div class="delete">
-																	<a href="">delete</a>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="col-md-6">
-																<div class="checkbox">
-											            <label>
-											                <input type="checkbox" value="">
-											                <span class="cr"><i class="cr-icon fa fa-check"></i></span>
-											                One of your articles was approved, check it out!	
-											            </label>
-											        </div>
-															</div>
-															<div class="col-md-4 date-rec">
-																1 week, 6 days ago
-															</div>
-															<div class="col-md-2 read-delete">
-																<div class="read">
-																	<a href="">read</a>
-																</div>
-																<div class="delete">
-																	<a href="">delete</a>
-																</div>
-															</div>
-														</li>
-													</ul>
-
-													<p class="viewing">Viewing 1-5 of a total of 5</p>
-													<div class="bulk-actions">
-														<div class="col-md-4 select">
-														  <select class="col-md-12 ">
-														    <option disabled selected>Bulk actions</option>
-														    <option value="1">READ</option>
-														    <option value="1">DELETE</option>
-														  </select>
-			                     	</div>
-														<div class="clear"></div>
-												    <a class="btn btn-primary">Apply</a>
+                     	<div class="content-block">
+                     		<h3>Sent invites</h3>
+                     		<p>You have sent invitations to the following people</p>
+                     		<p class="viewing">Viewing 1-5 of a total of 5</p>
+												
+												<div class="divTable invites-table">
+													<div class="divTableHeading">
+														<div class="divTableRow">
+															<div class="divTableHead del">&nbsp;</div>
+															<div class="divTableHead email"><a href="" class="active">Invited email adress</a></div>
+															<div class="divTableHead group"><a href="">Group invitations</a></div>
+															<div class="divTableHead sent"><a href="">Sent</a></div>
+															<div class="divTableHead accepted"><a href="">Accepted</a></div>
+														</div>
+													</div>
+													<div class="divTableBody">
+														<div class="divTableRow">
+															<div class="divTableCell"><a href=""><img src="img/delete-red.png"></a></div>
+															<div class="divTableCell email">dfafdasf@gmail.com</div>
+															<div class="divTableCell">-</div>
+															<div class="divTableCell sent">5 October 2017</div>
+															<div class="divTableCell">-</div>
+														</div>
+														<div class="divTableRow">
+															<div class="divTableCell"><a href=""><img src="img/delete-red.png"></a></div>
+															<div class="divTableCell email">dfafdasf@gmail.com</div>
+															<div class="divTableCell">-</div>
+															<div class="divTableCell sent">5 October 2017</div>
+															<div class="divTableCell">-</div>
+														</div>
+														<div class="divTableRow">
+															<div class="divTableCell"><a href=""><img src="img/delete-red.png"></a></div>
+															<div class="divTableCell email">dfafdasf@gmail.com</div>
+															<div class="divTableCell">-</div>
+															<div class="divTableCell sent">5 October 2017</div>
+															<div class="divTableCell">-</div>
+														</div>
+														<div class="divTableRow">
+															<div class="divTableCell"><a href=""><img src="img/delete-red.png"></a></div>
+															<div class="divTableCell email">dfafdasf@gmail.com</div>
+															<div class="divTableCell">-</div>
+															<div class="divTableCell sent">5 October 2017</div>
+															<div class="divTableCell">-</div>
+														</div>
+														<div class="divTableRow">
+															<div class="divTableCell"><a href=""><img src="img/delete-red.png"></a></div>
+															<div class="divTableCell email">dfafdasf@gmail.com</div>
+															<div class="divTableCell">-</div>
+															<div class="divTableCell sent">5 October 2017</div>
+															<div class="divTableCell">-</div>
+														</div>
 													</div>
 												</div>
-											<div class="clear"></div>
+												<div class="footer-table">
+													<div class="viewing col-md-6 col-sm-5 col-xs-12">Viewing 1-5 of a total of 5</div>
+													<div class="col-md-6 col-sm-6 col-xs-12">
+														<div class="clear-block border">
+															<a href="">Clear all accepted invitations</a>
+														</div>
+														<div class="clear-block">
+															<a href="">Clear all invitations</a>
+														</div>
+													</div>
+													<div class="clear"></div>
+												</div>
+												<div class="clear"></div>
+											</div>
 										</section>
                   </main>
                </div>
@@ -306,7 +215,7 @@
          </div>
       </div>
 	
-	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/invites.css">
 	<script src="js/scripts.min.js"></script>
 
 </body>

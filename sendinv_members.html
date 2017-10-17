@@ -16,7 +16,7 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
 	<!-- Windows Phone -->
@@ -124,181 +124,41 @@
                         </ul>
                      </nav>
                   </aside>
-               </div>
+               </div>   
                <div class="col-md-9">
                   <main class="main">
-                     <section class="section">
-                     	<div class="title">
-                     		<div class="col-md-6">
-	                     		<h1>Notifications</h1>
+                     <section class="section new-members">
+                    	<div class="title">
+                     		<div class="col-md-5 col-sm-5 col-xs-12">
+	                     		<h1>Send invites</h1>
 	                     	</div>
-	                     	<div class="col-md-6">
+	                     	<div class="col-md-7 col-sm-7 col-xs-12">
 	                     		<div class="pull-right">
-		                     		
+		                     		<a href="sendinv_members.html" class="btn btn-invite">Invite new members</a>
+                                 <a href="sendinv.html" class="btn btn-send">Sent invites</a>
 		                     	</div>
 	                     	</div>
+	                     	<div style="clear: both;"></div>
                      	</div>
-                     	<div class="content-notif">
-                     		<div class="col-md-8">
-	                     		<ul class="notif-tabs-nav">
-	                     			<li class="active">Unread</li>
-	                     			<li>Read</li>
-	                     		</ul>
-	                     	</div>
-	                     	<div class="col-md-4 form-inline select">
-												  <label class="mr-sm-2" for="orderBy">Order by</label>
-												  <select class="mb-2 mr-sm-2 mb-sm-0" id="orderBy">
-												    <option selected>Newest first</option>
-												    <option value="1">Oldest first</option>
-												  </select>
-	                     	</div>
+                     	<div class="content-block">
+                     		<h3>Invite New Members</h3>
+                     		<p>Invite friends to join World Travel Nation by following these steps:</p>
+                     		<div class="step"><span>1.Enter email</span> addresses below, one per line.</div>
+												<p class="viewing">You can invite a maximum of 5 people at a time.</p>
+												<textarea name="" id=""></textarea>
 
-	                     	<div class="notifi-list">
-													<ul>
-														<li class="table-first-row">
-															<div class="col-md-6">
-																<div class="checkbox">
-											            <label>
-											                <input type="checkbox" value="">
-											                <span class="cr"><i class="cr-icon fa fa-check"></i></span>
-											                Notification
-											            </label>
-											        </div>
-															</div>
-															<div class="col-md-4 date-rec">
-																<h4>Date Received</h4>
-															</div>
-															<div class="col-md-2 text-center">
-																<h4>Actions</h4>
-															</div>
-														</li>
-														
-														<li>
-															<div class="col-md-6">
-																<div class="checkbox">
-											            <label>
-											                <input type="checkbox" value="">
-											                <span class="cr"><i class="cr-icon fa fa-check"></i></span>
-											                You have a friendship request from Pia Bech
-											            </label>
-											        </div>
-															</div>
-															<div class="col-md-4 date-rec">
-																1 week, 6 days ago
-															</div>
-															<div class="col-md-2 read-delete">
-																<div class="read">
-																	<a href="">read</a>
-																</div>
-																<div class="delete">
-																	<a href="">delete</a>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="col-md-6">
-																<div class="checkbox">
-											            <label>
-											                <input type="checkbox" value="">
-											                <span class="cr"><i class="cr-icon fa fa-check"></i></span>
-											                You have a friendship request from Filip Dalengaard
-											            </label>
-											        </div>
-															</div>
-															<div class="col-md-4 date-rec">
-																1 week, 6 days ago
-															</div>
-															<div class="col-md-2 read-delete">
-																<div class="read">
-																	<a href="">read</a>
-																</div>
-																<div class="delete">
-																	<a href="">delete</a>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="col-md-6">
-																<div class="checkbox">
-											            <label>
-											                <input type="checkbox" value="">
-											                <span class="cr"><i class="cr-icon fa fa-check"></i></span>
-											                WTN mentioned you
-											            </label>
-											        </div>
-															</div>
-															<div class="col-md-4 date-rec">
-																1 week, 6 days ago
-															</div>
-															<div class="col-md-2 read-delete">
-																<div class="read">
-																	<a href="">read</a>
-																</div>
-																<div class="delete">
-																	<a href="">delete</a>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="col-md-6">
-																<div class="checkbox">
-											            <label>
-											                <input type="checkbox" value="">
-											                <span class="cr"><i class="cr-icon fa fa-check"></i></span>
-											                One of your articles was approved, check it out!
-											            </label>
-											        </div>
-															</div>
-															<div class="col-md-4 date-rec">
-																1 week, 6 days ago
-															</div>
-															<div class="col-md-2 read-delete">
-																<div class="read">
-																	<a href="">read</a>
-																</div>
-																<div class="delete">
-																	<a href="">delete</a>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="col-md-6">
-																<div class="checkbox">
-											            <label>
-											                <input type="checkbox" value="">
-											                <span class="cr"><i class="cr-icon fa fa-check"></i></span>
-											                One of your articles was approved, check it out!	
-											            </label>
-											        </div>
-															</div>
-															<div class="col-md-4 date-rec">
-																1 week, 6 days ago
-															</div>
-															<div class="col-md-2 read-delete">
-																<div class="read">
-																	<a href="">read</a>
-																</div>
-																<div class="delete">
-																	<a href="">delete</a>
-																</div>
-															</div>
-														</li>
-													</ul>
+												<div class="step"><span>2.Subject:</span> An invitation to join the World Travel Nation community.</div>
+												<div class="step"><span>3.(optional) Customize the text of the invitation.</span></div>
+												<p class="viewing">The message will also contain a custom footer containing links to accept the invitation or opt out of further email invitations from this site.</p>
+												<textarea name="" id="">You have been invited by John to join the World Travel Nation community.
 
-													<p class="viewing">Viewing 1-5 of a total of 5</p>
-													<div class="bulk-actions">
-														<div class="col-md-4 select">
-														  <select class="col-md-12 ">
-														    <option disabled selected>Bulk actions</option>
-														    <option value="1">READ</option>
-														    <option value="1">DELETE</option>
-														  </select>
-			                     	</div>
-														<div class="clear"></div>
-												    <a class="btn btn-primary">Apply</a>
-													</div>
-												</div>
-											<div class="clear"></div>
+Visit John's profile at http://dev.worldtravelnation.com/members/john-mayer/.
+												</textarea>
+												<div class="form-group">
+											    <button type="submit" class="btn btn-primary">Send invites</button>
+											  </div>
+												<div class="clear"></div>
+											</div>
 										</section>
                   </main>
                </div>
@@ -306,7 +166,7 @@
          </div>
       </div>
 	
-	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/invites.css">
 	<script src="js/scripts.min.js"></script>
 
 </body>
