@@ -1319,6 +1319,8 @@ padding-left: 10px;
 				background-image:url("../img/gear.png");
 				background-repeat:no-repeat;
 				z-index: 1;
+				top: -9px;
+   			 	left: -9px;
 			}
 	     	}
 		}
@@ -1693,4 +1695,32 @@ background: $main-color;
 	bottom:0;
 	z-index: 4;
 	display: none;
+}
+
+.dropdown {
+	&__btn {
+		border:none;
+		background:transparent;
+		padding-right:15px;
+		width: 110px;
+		display: inline-block;
+		cursor:pointer;
+		&_width {
+			width: 130px;
+		}
+		&_inner {
+			font-family: $MonBold;
+				font-size: 14px;
+				color: $main-color;
+				text-transform: uppercase;
+
+		}
+	}
+	&__click {
+		font-family: $MonBold;
+				font-size: 14px;
+				color: $main-color;
+				text-transform: uppercase;
+
+	}
 }

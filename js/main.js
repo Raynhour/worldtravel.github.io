@@ -16,6 +16,17 @@ $('document').ready(function(){
 	$('.modal-edit__close, .modal-edit__close-text').click(function(){
 		$(".modal-edit").toggle();
 	});
+	$('.dropdown__click_1').click(function(){
+		var text;
+		text = $(this,".dropdown__click_1").text();
+		$(".dropdown__btn_inner_1").html(text);
+	});
+
+	$('.dropdown__click_2').click(function(){
+		var text;
+		text = $(this,".dropdown__click_2").text();
+		$(".dropdown__btn_inner_2").html(text);
+	});	
 	$('.owl-carousel').owlCarousel({
 	    nav:true,
 	    navText: ["<img src='img/prev.png'>","<img src='img/next.png'>"],

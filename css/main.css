@@ -1715,6 +1715,8 @@
   background-image: url("../img/gear.png");
   background-repeat: no-repeat;
   z-index: 1;
+  top: -9px;
+  left: -9px;
 }
 
 .inbox_width {
@@ -2173,6 +2175,33 @@
   bottom: 0;
   z-index: 4;
   display: none;
+}
+
+.dropdown__btn {
+  border: none;
+  background: transparent;
+  padding-right: 15px;
+  width: 110px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown__btn_width {
+  width: 130px;
+}
+
+.dropdown__btn_inner {
+  font-family: "MonsterBold";
+  font-size: 14px;
+  color: #002d40;
+  text-transform: uppercase;
+}
+
+.dropdown__click {
+  font-family: "MonsterBold";
+  font-size: 14px;
+  color: #002d40;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1024px) {
