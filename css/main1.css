@@ -1665,7 +1665,7 @@
   content: "▼";
   color: #ff414d;
   padding: 0 8px;
-  font-size: 12px;
+  font-size: 10px;
   position: absolute;
   right: 16px;
   top: 12px;
@@ -1980,7 +1980,7 @@
     content: "▼";
     color: #ff414d;
     padding: 0 8px;
-    font-size: 12px;
+    font-size: 10px;
     position: absolute;
     right: 18px;
     top: 6px;
@@ -2112,6 +2112,9 @@
     font-family: "monsterrat", sans-serif;
     font-size: 18px;
     font-weight: 500; }
+.post .likeheart img {
+      margin-right: 15px;
+    }
     .post .likeheart .fa-heart {
       font-size: 20px;
       margin-right: 10px;

@@ -938,6 +938,8 @@ padding-left: 10px;
 		&__left {
 			float:left;
 			display: inline-block;
+			position: relative;
+			z-index: 1;
 		}
 		&__right {
 			float:right;
@@ -1319,8 +1321,8 @@ padding-left: 10px;
 	     					&::after {
 				position: absolute;
 				content:"";
-				width: 13px;
-				height: 13px;
+				width: 14px;
+				height: 14px;
 				background-image:url("../img/gear.png");
 				background-repeat:no-repeat;
 				z-index: 1;
