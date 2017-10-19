@@ -2702,3 +2702,27 @@
   src: url("../fonts/Montserrat-Medium/Montserrat-Medium.eot");
   src: url("../fonts/Montserrat-Medium/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Medium/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium/Montserrat-Medium.ttf") format("truetype"); }
 
+/*.form-control_fix {
+  display: inline-block;  
+  max-width:300px;
+}*/
+
+.select-name {
+  font-family: "monsterrat", sans-serif;
+  font-size:14px;
+}
+
+.select-wrap {
+ display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  height: 34px;
+  float:left;
+  width: 18%;
+}

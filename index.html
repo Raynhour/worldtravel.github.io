@@ -24,7 +24,7 @@
       <header class="header header_shadow">
          <div class="container">
             <div class="row">
-               <div class="col-md-3 col-xs-12">
+               <div class="col-md-3 col-xs-12 col-sm-3">
                   <div class="header__wrap">
                      <a href="index.html" class="header__logo">
                      <img src="img/logo.png" alt="">
@@ -34,14 +34,14 @@
                      <h1 class="header__title">world<br>travel<br>nation</h1>
                   </div>
                </div>
-               <div class="col-md-3 col-xs-12   ">
+               <div class="col-md-3 col-xs-12 col-sm-3">
                   <div class="header__wrap">
                      <form form="" action="" method="" class="header__form">
                         <input type="text" class="header__search">
                      </form>
                   </div>
                </div>
-               <div class="col-md-3 col-md-offset-3 col-xs-12 col-xs-offset-0">
+               <div class="col-md-3 col-md-offset-3 col-xs-12 col-xs-offset-0 col-sm-3 col-sm-offset-3">
                   <div class="header__wrap header__wrap_right">
                      <a href="notifications.html" class="header__link">
                         <img src="img/notifications.png" alt="">
@@ -141,10 +141,10 @@
                                  <a href=" " class="section__btn section__btn_blue"><span class="section__btn-inner">Message</span></a>
                               </div>
                               </div>
-                              <div class="col-md-8 col-xs-12   ">
+                              <div class="col-md-8 col-xs-12  ">
                                  <!-- <div class="section__box"> -->
                                  <h2 class="section__title section__title_pink section__title_company">company name</h2>
-                                 <div class="col-md-6">
+                                 <div class="col-md-6 col-sm-6">
                                  <ul class="section__list section__list_company">
                                     <li class="section__item section__item_adress">Mailing adress</li>
                                     <li class="section__item section__item_tel">Telephone office</li>
@@ -152,7 +152,7 @@
                                  </ul>
                                  
                               </div>
-                              <div class="col-md-6">
+                              <div class="col-md-6 col-sm-6">
                                  <ul class="section__list section__list_company">
                                     <li class="section__item section__item_mail">E-mail</li>
                                     <li class="section__item section__item_skype">Skype</li>
@@ -160,13 +160,13 @@
                                  </ul>
                                  
                               </div>
-                              <div class="col-md-6"> 
+                              <div class="col-md-6 col-sm-6"> 
                               <div class="section-company__box">
                                     <div class="section-company__box-left">FAM trip provider</div>
                                     <div class="section-company__box-right">yes</div>
                                  </div>
                               </div>
-                              <div class="col-md-6">  
+                              <div class="col-md-6 col-sm-6">  
                                  <div class="section-company__box">
                                     <div class="section-company__box-left">FAM trip provider</div>
                                     <div class="section-company__box-right">yes</div>
@@ -338,21 +338,21 @@
                               <h2 class="section__title">our services</h2>
                            </div>
                            <div class="section_services">
-                              <div class="col-md-4">
+                              <div class="col-md-4 col-sm-4">
                                  <ul class="section__list">
                                     <li class="section__item section__item_services">service</li>
                                     <li class="section__item section__item_services">service</li>
                                     <li class="section__item section__item_services">service</li>
                                  </ul>
                               </div>
-                              <div class="col-md-4">
+                              <div class="col-md-4 col-sm-4">
                                  <ul class="section__list">
                                     <li class="section__item section__item_services">service</li>
                                     <li class="section__item section__item_services">service</li>
                                     <li class="section__item section__item_services">service</li>
                                  </ul>
                               </div>
-                              <div class="col-md-4">
+                              <div class="col-md-4 col-sm-4">
                                  <ul class="section__list">
                                     <li class="section__item section__item_services">service</li>
                                     <li class="section__item section__item_services">service</li>
@@ -360,7 +360,7 @@
                                  </ul>
                               </div>
                            </div>
-                           <div class="col-md-12">
+                           <div class="col-md-12 col-sm-12">
                               <div class="section__more">
                                  <span class="section__more-circle"></span>
                                  <span class="section__more-circle"></span>
@@ -470,7 +470,7 @@
                      <section class="section">
                         <div class="section__network">
                            <div class="row">
-                              <div class="col-md-12">
+                              <div class="col-md-12 col-sm-12">
                                  <div class="section__destinations">
                                     <div class="section__destinations-box-1">
                                        <h3 class="section__title section__title_destinations"> destinations</h3>
@@ -512,58 +512,58 @@
       <script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
       <script src="js/main.js"></script>
       <script>  
-         // function initMap() {
-         //   var map = new google.maps.Map(document.getElementById('map'), {
-         //     zoom: 15,
-         //     center: {lat: 50.349635, lng: 30.955717}
-         //   });
+         function initMap() {
+           var map = new google.maps.Map(document.getElementById('map'), {
+             zoom: 15,
+             center: {lat: 50.349635, lng: 30.955717}
+           });
          
-         //   setMarkers(map);
-         // }
+           setMarkers(map);
+         }
          
-         // // Data for the markers consisting of a name, a LatLng and a zIndex for the
-         // // order in which these markers should display on top of each other.
-         // var beaches = [
-         //   ['Студия-магазин', 50.349635, 30.955717],
-         //   ['Центр красоты', 50.357583, 30.940998],
-         // ];
+         // Data for the markers consisting of a name, a LatLng and a zIndex for the
+         // order in which these markers should display on top of each other.
+         var beaches = [
+           ['Студия-магазин', 50.349635, 30.955717],
+           ['Центр красоты', 50.357583, 30.940998],
+         ];
          
-         // function setMarkers(map) {
-         //   // Adds markers to the map.
+         function setMarkers(map) {
+           // Adds markers to the map.
          
-         //   // Marker sizes are expressed as a Size of X,Y where the origin of the image
-         //   // (0,0) is located in the top left of the image.
+           // Marker sizes are expressed as a Size of X,Y where the origin of the image
+           // (0,0) is located in the top left of the image.
          
-         //   // Origins, anchor positions and coordinates of the marker increase in the X
-         //   // direction to the right and in the Y direction down.
-         //   var image = {
-         //     url: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-         //     // This marker is 20 pixels wide by 32 pixels high.
-         //     size: new google.maps.Size(20, 32),
-         //     // The origin for this image is (0, 0).
-         //     origin: new google.maps.Point(0, 0),
-         //     // The anchor for this image is the base of the flagpole at (0, 32).
-         //     anchor: new google.maps.Point(0, 32)
-         //   };
-         //   // Shapes define the clickable region of the icon. The type defines an HTML
-         //   // <area> element 'poly' which traces out a polygon as a series of X,Y points.
-         //   // The final coordinate closes the poly by connecting to the first coordinate.
-         //   var shape = {
-         //     coords: [1, 1, 1, 20, 18, 20, 18, 1],
-         //     type: 'poly'
-         //   };
-         //   for (var i = 0; i < beaches.length; i++) {
-         //     var beach = beaches[i];
-         //     var marker = new google.maps.Marker({
-         //       position: {lat: beach[1], lng: beach[2]},
-         //       map: map,
-         //       icon: image,
-         //       shape: shape,
-         //       title: beach[0],
-         //       zIndex: beach[3]
-         //     });
-         //   }
-         // }
+           // Origins, anchor positions and coordinates of the marker increase in the X
+           // direction to the right and in the Y direction down.
+           var image = {
+             url: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+             // This marker is 20 pixels wide by 32 pixels high.
+             size: new google.maps.Size(20, 32),
+             // The origin for this image is (0, 0).
+             origin: new google.maps.Point(0, 0),
+             // The anchor for this image is the base of the flagpole at (0, 32).
+             anchor: new google.maps.Point(0, 32)
+           };
+           // Shapes define the clickable region of the icon. The type defines an HTML
+           // <area> element 'poly' which traces out a polygon as a series of X,Y points.
+           // The final coordinate closes the poly by connecting to the first coordinate.
+           var shape = {
+             coords: [1, 1, 1, 20, 18, 20, 18, 1],
+             type: 'poly'
+           };
+           for (var i = 0; i < beaches.length; i++) {
+             var beach = beaches[i];
+             var marker = new google.maps.Marker({
+               position: {lat: beach[1], lng: beach[2]},
+               map: map,
+               icon: image,
+               shape: shape,
+               title: beach[0],
+               zIndex: beach[3]
+             });
+           }
+         }
       </script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSCdhkGshrBOsjkmULOzte097gHDRDilw&callback=initMap"</script>
       <!-- endbuild -->
