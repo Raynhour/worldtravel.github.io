@@ -1665,7 +1665,7 @@
   content: "▼";
   color: #ff414d;
   padding: 0 8px;
-  font-size: 16px;
+  font-size: 12px;
   position: absolute;
   right: 16px;
   top: 12px;
@@ -1980,7 +1980,7 @@
     content: "▼";
     color: #ff414d;
     padding: 0 8px;
-    font-size: 16px;
+    font-size: 12px;
     position: absolute;
     right: 18px;
     top: 6px;
@@ -2699,5 +2699,3 @@
   src: url("../fonts/Montserrat-Medium/Montserrat-Medium.eot");
   src: url("../fonts/Montserrat-Medium/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Medium/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium/Montserrat-Medium.ttf") format("truetype"); }
 
-
-/*# sourceMappingURL=../css/main.css.map */

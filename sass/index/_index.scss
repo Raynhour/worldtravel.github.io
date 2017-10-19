@@ -937,6 +937,7 @@ padding-left: 10px;
 		}
 		&__left {
 			float:left;
+			display: inline-block;
 		}
 		&__right {
 			float:right;
@@ -951,6 +952,7 @@ padding-left: 10px;
 				color: $main-color;
 				display: block;
 				margin-bottom: 10px;
+				display: inline-block;
 				text-transform: uppercase;
 				&:hover {
 					color: $main-color;
@@ -1038,6 +1040,7 @@ padding-left: 10px;
 		&__thumbnail {
 			background-position:center center;
 			background-size:cover;
+			display: block;
 			width: 170px;
 			margin-right: 18px;
 			height: 170px;
@@ -1142,6 +1145,7 @@ padding-left: 10px;
 				padding-left: 22px;
 				padding-right: 22px;
 				padding-top: 20px;
+				resize: vertical;
 			}
 			&-btn {
 				font-family: "MonsterBold";
@@ -1220,6 +1224,7 @@ padding-left: 10px;
 			width:100%;
 			min-height:130px;
 			padding-left: 13px;	
+			resize: vertical;
 		}
 		&__btn {
 			font-family: "MonsterBold";
@@ -1356,7 +1361,7 @@ padding-left: 10px;
 		padding-left: 20px;
 		padding-right: 20px;
 		&_left-scroll {
-			max-height:500px;
+			max-height: 603px;
 			padding-left: 0px;
 			padding-right: 0px;
 		}
